@@ -1,6 +1,6 @@
 import React from 'react';
-import { ActionButton } from '../components/ActionButton';
 import { useStateValue } from '../context';
+import ActionButton from '../components/ActionButton';
 
 function CartPage() {
   const [{ cart }] = useStateValue();

@@ -1,9 +1,33 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* App.css */
+* {
+  box-sizing: border-box;
 }
+
+a {
+  cursor: pointer;
+}
+
+body {
+  color: #222;
+  margin: 0; /* Remove default margin to avoid unexpected spacing */
+  font-family: Arial, sans-serif; /* You can specify your preferred font here */
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  padding: 10px;
+  max-width: 1460px;
+  margin: 0 auto; /* Center horizontally by applying auto margin on both sides */
+  min-height: 100vh; /* Ensure the content spans the entire viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* ActionButton.css */
 .action-button {
@@ -74,4 +98,25 @@
 
 .product a:hover {
   background-color: #0056b3;
+}
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.auth-links a {
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
 }

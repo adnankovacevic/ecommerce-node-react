@@ -1,8 +1,10 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css'
 import CartPage from './pages/Cart';
 import Home from './pages/Home';
 import Layout from './pages/Layout'
-import ProductDetail from './pages/ProductDetail';
+import LoginPage from './pages/auth/Login';
+import RegistrationPage from './pages/auth/Registration';
 
 
 function App() {
@@ -11,9 +13,12 @@ function App() {
     <div className="app">
       <Routes>
         <Route path="/" element={<Layout />} />
-        <Route index element={<Home />} />
-        <Route path="/product/:id" element={ProductDetail} />
-        <Route path="/cart" element={CartPage} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegistrationPage />} />
+
+        {/* <Route path="/product/:id" element={ProductDetail} />
+        <Route path="/cart" element={CartPage} /> */}
       </Routes>
     </div>
 

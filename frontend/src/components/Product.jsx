@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ActionButton } from './';
+import ActionButton from './ActionButton';
 
 
 function Product({ product }) {

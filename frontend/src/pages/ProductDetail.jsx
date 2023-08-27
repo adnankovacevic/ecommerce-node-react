@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { ActionButton } from '../components/ActionButton';
+import { ActionButton } from './components/ActionButton';
 import axios from 'axios';
 
 function ProductDetail() {
